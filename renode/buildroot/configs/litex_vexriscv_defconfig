@@ -1,0 +1,13 @@
+BR2_riscv=y
+BR2_riscv_custom=y
+BR2_RISCV_ISA_CUSTOM_RVM=y
+BR2_RISCV_32=y
+BR2_KERNEL_HEADERS_5_0=y
+BR2_GCC_VERSION_8_X=y
+BR2_TARGET_GENERIC_GETTY_PORT="hvc0"
+BR2_ROOTFS_OVERLAY="board/litex_vexriscv/rootfs_overlay"
+BR2_LINUX_KERNEL=y
+BR2_LINUX_KERNEL_PATCH="board/litex_vexriscv/linux_add_liteeth_driver.patch"
+BR2_LINUX_KERNEL_USE_CUSTOM_CONFIG=y
+BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="board/litex_vexriscv/linux.config"
+BR2_TARGET_ROOTFS_CPIO=y
