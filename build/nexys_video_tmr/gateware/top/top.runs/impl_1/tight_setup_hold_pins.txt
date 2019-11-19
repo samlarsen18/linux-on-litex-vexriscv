@@ -1,0 +1,10 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|    main_soclinux_clkout0 |    main_soclinux_clkout0 |                                                 VexRiscv/memory_MulDivIterativePlugin_rs1_reg[28]_TMR_2/D|
+|    main_soclinux_clkout0 |    main_soclinux_clkout0 |                                                 VexRiscv/memory_MulDivIterativePlugin_rs1_reg[24]_TMR_2/D|
+|    main_soclinux_clkout0 |    main_soclinux_clkout0 |                                                 VexRiscv/memory_MulDivIterativePlugin_rs1_reg[20]_TMR_2/D|
+|    main_soclinux_clkout0 |    main_soclinux_clkout0 |                                                 VexRiscv/memory_MulDivIterativePlugin_rs1_reg[16]_TMR_2/D|
+|    main_soclinux_clkout0 |    main_soclinux_clkout0 |                                                 VexRiscv/memory_MulDivIterativePlugin_rs1_reg[12]_TMR_2/D|
+|    main_soclinux_clkout0 |    main_soclinux_clkout0 |                                                  VexRiscv/memory_MulDivIterativePlugin_rs1_reg[8]_TMR_2/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

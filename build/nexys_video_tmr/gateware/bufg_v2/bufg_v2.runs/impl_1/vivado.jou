@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov  1 17:40:59 2019
+# Process ID: 19137
+# Current directory: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1
+# Command line: vivado -log nvv_bufg_v2_nmr.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source nvv_bufg_v2_nmr.tcl -notrace
+# Log file: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/nvv_bufg_v2_nmr.vdi
+# Journal file: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source nvv_bufg_v2_nmr.tcl -notrace

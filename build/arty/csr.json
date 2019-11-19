@@ -1,0 +1,583 @@
+{
+    "csr_bases": {
+        "cpu": 4026533888,
+        "ctrl": 4026531840,
+        "ddrphy": 4026542080,
+        "ethmac": 4026546176,
+        "ethphy": 4026544128,
+        "i2c0": 4026566656,
+        "leds": 4026554368,
+        "rgb_led_b0": 4026560512,
+        "rgb_led_g0": 4026558464,
+        "rgb_led_r0": 4026556416,
+        "sdram": 4026548224,
+        "spi": 4026564608,
+        "spiflash": 4026552320,
+        "switches": 4026562560,
+        "timer0": 4026537984,
+        "uart": 4026535936,
+        "uart_phy": 4026540032,
+        "xadc": 4026568704
+    },
+    "csr_registers": {
+        "cpu_timer_latch": {
+            "addr": 4026533888,
+            "size": 1,
+            "type": "rw"
+        },
+        "cpu_timer_time": {
+            "addr": 4026533892,
+            "size": 8,
+            "type": "ro"
+        },
+        "cpu_timer_time_cmp": {
+            "addr": 4026533924,
+            "size": 8,
+            "type": "rw"
+        },
+        "ctrl_reset": {
+            "addr": 4026531840,
+            "size": 1,
+            "type": "rw"
+        },
+        "ctrl_scratch": {
+            "addr": 4026531844,
+            "size": 4,
+            "type": "rw"
+        },
+        "ctrl_bus_errors": {
+            "addr": 4026531860,
+            "size": 4,
+            "type": "ro"
+        },
+        "ddrphy_half_sys8x_taps": {
+            "addr": 4026542080,
+            "size": 1,
+            "type": "rw"
+        },
+        "ddrphy_cdly_rst": {
+            "addr": 4026542084,
+            "size": 1,
+            "type": "rw"
+        },
+        "ddrphy_cdly_inc": {
+            "addr": 4026542088,
+            "size": 1,
+            "type": "rw"
+        },
+        "ddrphy_dly_sel": {
+            "addr": 4026542092,
+            "size": 1,
+            "type": "rw"
+        },
+        "ddrphy_rdly_dq_rst": {
+            "addr": 4026542096,
+            "size": 1,
+            "type": "rw"
+        },
+        "ddrphy_rdly_dq_inc": {
+            "addr": 4026542100,
+            "size": 1,
+            "type": "rw"
+        },
+        "ddrphy_rdly_dq_bitslip_rst": {
+            "addr": 4026542104,
+            "size": 1,
+            "type": "rw"
+        },
+        "ddrphy_rdly_dq_bitslip": {
+            "addr": 4026542108,
+            "size": 1,
+            "type": "rw"
+        },
+        "ethmac_sram_writer_slot": {
+            "addr": 4026546176,
+            "size": 1,
+            "type": "ro"
+        },
+        "ethmac_sram_writer_length": {
+            "addr": 4026546180,
+            "size": 4,
+            "type": "ro"
+        },
+        "ethmac_sram_writer_errors": {
+            "addr": 4026546196,
+            "size": 4,
+            "type": "ro"
+        },
+        "ethmac_sram_writer_ev_status": {
+            "addr": 4026546212,
+            "size": 1,
+            "type": "rw"
+        },
+        "ethmac_sram_writer_ev_pending": {
+            "addr": 4026546216,
+            "size": 1,
+            "type": "rw"
+        },
+        "ethmac_sram_writer_ev_enable": {
+            "addr": 4026546220,
+            "size": 1,
+            "type": "rw"
+        },
+        "ethmac_sram_reader_start": {
+            "addr": 4026546224,
+            "size": 1,
+            "type": "rw"
+        },
+        "ethmac_sram_reader_ready": {
+            "addr": 4026546228,
+            "size": 1,
+            "type": "ro"
+        },
+        "ethmac_sram_reader_level": {
+            "addr": 4026546232,
+            "size": 1,
+            "type": "ro"
+        },
+        "ethmac_sram_reader_slot": {
+            "addr": 4026546236,
+            "size": 1,
+            "type": "rw"
+        },
+        "ethmac_sram_reader_length": {
+            "addr": 4026546240,
+            "size": 2,
+            "type": "rw"
+        },
+        "ethmac_sram_reader_ev_status": {
+            "addr": 4026546248,
+            "size": 1,
+            "type": "rw"
+        },
+        "ethmac_sram_reader_ev_pending": {
+            "addr": 4026546252,
+            "size": 1,
+            "type": "rw"
+        },
+        "ethmac_sram_reader_ev_enable": {
+            "addr": 4026546256,
+            "size": 1,
+            "type": "rw"
+        },
+        "ethmac_preamble_crc": {
+            "addr": 4026546260,
+            "size": 1,
+            "type": "ro"
+        },
+        "ethmac_preamble_errors": {
+            "addr": 4026546264,
+            "size": 4,
+            "type": "ro"
+        },
+        "ethmac_crc_errors": {
+            "addr": 4026546280,
+            "size": 4,
+            "type": "ro"
+        },
+        "ethphy_crg_reset": {
+            "addr": 4026544128,
+            "size": 1,
+            "type": "rw"
+        },
+        "ethphy_mdio_w": {
+            "addr": 4026544132,
+            "size": 1,
+            "type": "rw"
+        },
+        "ethphy_mdio_r": {
+            "addr": 4026544136,
+            "size": 1,
+            "type": "ro"
+        },
+        "i2c0_w": {
+            "addr": 4026566656,
+            "size": 1,
+            "type": "rw"
+        },
+        "i2c0_r": {
+            "addr": 4026566660,
+            "size": 1,
+            "type": "ro"
+        },
+        "leds_out": {
+            "addr": 4026554368,
+            "size": 1,
+            "type": "rw"
+        },
+        "rgb_led_b0_enable": {
+            "addr": 4026560512,
+            "size": 1,
+            "type": "rw"
+        },
+        "rgb_led_b0_width": {
+            "addr": 4026560516,
+            "size": 4,
+            "type": "rw"
+        },
+        "rgb_led_b0_period": {
+            "addr": 4026560532,
+            "size": 4,
+            "type": "rw"
+        },
+        "rgb_led_g0_enable": {
+            "addr": 4026558464,
+            "size": 1,
+            "type": "rw"
+        },
+        "rgb_led_g0_width": {
+            "addr": 4026558468,
+            "size": 4,
+            "type": "rw"
+        },
+        "rgb_led_g0_period": {
+            "addr": 4026558484,
+            "size": 4,
+            "type": "rw"
+        },
+        "rgb_led_r0_enable": {
+            "addr": 4026556416,
+            "size": 1,
+            "type": "rw"
+        },
+        "rgb_led_r0_width": {
+            "addr": 4026556420,
+            "size": 4,
+            "type": "rw"
+        },
+        "rgb_led_r0_period": {
+            "addr": 4026556436,
+            "size": 4,
+            "type": "rw"
+        },
+        "sdram_dfii_control": {
+            "addr": 4026548224,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi0_command": {
+            "addr": 4026548228,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi0_command_issue": {
+            "addr": 4026548232,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi0_address": {
+            "addr": 4026548236,
+            "size": 2,
+            "type": "rw"
+        },
+        "sdram_dfii_pi0_baddress": {
+            "addr": 4026548244,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi0_wrdata": {
+            "addr": 4026548248,
+            "size": 4,
+            "type": "rw"
+        },
+        "sdram_dfii_pi0_rddata": {
+            "addr": 4026548264,
+            "size": 4,
+            "type": "ro"
+        },
+        "sdram_dfii_pi1_command": {
+            "addr": 4026548280,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi1_command_issue": {
+            "addr": 4026548284,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi1_address": {
+            "addr": 4026548288,
+            "size": 2,
+            "type": "rw"
+        },
+        "sdram_dfii_pi1_baddress": {
+            "addr": 4026548296,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi1_wrdata": {
+            "addr": 4026548300,
+            "size": 4,
+            "type": "rw"
+        },
+        "sdram_dfii_pi1_rddata": {
+            "addr": 4026548316,
+            "size": 4,
+            "type": "ro"
+        },
+        "sdram_dfii_pi2_command": {
+            "addr": 4026548332,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi2_command_issue": {
+            "addr": 4026548336,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi2_address": {
+            "addr": 4026548340,
+            "size": 2,
+            "type": "rw"
+        },
+        "sdram_dfii_pi2_baddress": {
+            "addr": 4026548348,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi2_wrdata": {
+            "addr": 4026548352,
+            "size": 4,
+            "type": "rw"
+        },
+        "sdram_dfii_pi2_rddata": {
+            "addr": 4026548368,
+            "size": 4,
+            "type": "ro"
+        },
+        "sdram_dfii_pi3_command": {
+            "addr": 4026548384,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi3_command_issue": {
+            "addr": 4026548388,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi3_address": {
+            "addr": 4026548392,
+            "size": 2,
+            "type": "rw"
+        },
+        "sdram_dfii_pi3_baddress": {
+            "addr": 4026548400,
+            "size": 1,
+            "type": "rw"
+        },
+        "sdram_dfii_pi3_wrdata": {
+            "addr": 4026548404,
+            "size": 4,
+            "type": "rw"
+        },
+        "sdram_dfii_pi3_rddata": {
+            "addr": 4026548420,
+            "size": 4,
+            "type": "ro"
+        },
+        "spi_control": {
+            "addr": 4026564608,
+            "size": 2,
+            "type": "rw"
+        },
+        "spi_status": {
+            "addr": 4026564616,
+            "size": 1,
+            "type": "ro"
+        },
+        "spi_mosi": {
+            "addr": 4026564620,
+            "size": 1,
+            "type": "rw"
+        },
+        "spi_miso": {
+            "addr": 4026564624,
+            "size": 1,
+            "type": "ro"
+        },
+        "spi_cs": {
+            "addr": 4026564628,
+            "size": 1,
+            "type": "rw"
+        },
+        "spi_loopback": {
+            "addr": 4026564632,
+            "size": 1,
+            "type": "rw"
+        },
+        "spiflash_bitbang": {
+            "addr": 4026552320,
+            "size": 1,
+            "type": "rw"
+        },
+        "spiflash_miso": {
+            "addr": 4026552324,
+            "size": 1,
+            "type": "ro"
+        },
+        "spiflash_bitbang_en": {
+            "addr": 4026552328,
+            "size": 1,
+            "type": "rw"
+        },
+        "switches_out": {
+            "addr": 4026562560,
+            "size": 1,
+            "type": "rw"
+        },
+        "timer0_load": {
+            "addr": 4026537984,
+            "size": 4,
+            "type": "rw"
+        },
+        "timer0_reload": {
+            "addr": 4026538000,
+            "size": 4,
+            "type": "rw"
+        },
+        "timer0_en": {
+            "addr": 4026538016,
+            "size": 1,
+            "type": "rw"
+        },
+        "timer0_update_value": {
+            "addr": 4026538020,
+            "size": 1,
+            "type": "rw"
+        },
+        "timer0_value": {
+            "addr": 4026538024,
+            "size": 4,
+            "type": "ro"
+        },
+        "timer0_ev_status": {
+            "addr": 4026538040,
+            "size": 1,
+            "type": "rw"
+        },
+        "timer0_ev_pending": {
+            "addr": 4026538044,
+            "size": 1,
+            "type": "rw"
+        },
+        "timer0_ev_enable": {
+            "addr": 4026538048,
+            "size": 1,
+            "type": "rw"
+        },
+        "uart_rxtx": {
+            "addr": 4026535936,
+            "size": 1,
+            "type": "rw"
+        },
+        "uart_txfull": {
+            "addr": 4026535940,
+            "size": 1,
+            "type": "ro"
+        },
+        "uart_rxempty": {
+            "addr": 4026535944,
+            "size": 1,
+            "type": "ro"
+        },
+        "uart_ev_status": {
+            "addr": 4026535948,
+            "size": 1,
+            "type": "rw"
+        },
+        "uart_ev_pending": {
+            "addr": 4026535952,
+            "size": 1,
+            "type": "rw"
+        },
+        "uart_ev_enable": {
+            "addr": 4026535956,
+            "size": 1,
+            "type": "rw"
+        },
+        "uart_phy_tuning_word": {
+            "addr": 4026540032,
+            "size": 4,
+            "type": "rw"
+        },
+        "xadc_temperature": {
+            "addr": 4026568704,
+            "size": 2,
+            "type": "ro"
+        },
+        "xadc_vccint": {
+            "addr": 4026568712,
+            "size": 2,
+            "type": "ro"
+        },
+        "xadc_vccaux": {
+            "addr": 4026568720,
+            "size": 2,
+            "type": "ro"
+        },
+        "xadc_vccbram": {
+            "addr": 4026568728,
+            "size": 2,
+            "type": "ro"
+        }
+    },
+    "constants": {
+        "spiflash_page_size": 256,
+        "spiflash_sector_size": 65536,
+        "localip1": 192,
+        "localip2": 168,
+        "localip3": 1,
+        "localip4": 50,
+        "remoteip1": 192,
+        "remoteip2": 168,
+        "remoteip3": 1,
+        "remoteip4": 100,
+        "flash_boot_address": 4194304,
+        "ethmac_rx_slots": 2,
+        "ethmac_tx_slots": 2,
+        "ethmac_slot_size": 2048,
+        "config_clock_frequency": 100000000,
+        "config_cpu_reset_addr": 0,
+        "config_cpu_type": "vexriscv",
+        "config_cpu_type_vexriscv": null,
+        "config_cpu_variant": "linux",
+        "config_cpu_variant_linux": null,
+        "config_csr_alignment": 32,
+        "config_csr_data_width": 8,
+        "config_l2_size": 8192,
+        "config_shadow_base": 2147483648,
+        "ethmac_interrupt": 2,
+        "timer0_interrupt": 1,
+        "uart_interrupt": 0
+    },
+    "memories": {
+        "rom": {
+            "base": 0,
+            "size": 32768
+        },
+        "sram": {
+            "base": 268435456,
+            "size": 32768
+        },
+        "csr": {
+            "base": 4026531840,
+            "size": 16777216
+        },
+        "main_ram": {
+            "base": 3221225472,
+            "size": 268435456
+        },
+        "ethmac": {
+            "base": 2952790016,
+            "size": 8192
+        },
+        "emulator_ram": {
+            "base": 536870912,
+            "size": 16384
+        },
+        "spiflash": {
+            "base": 3489660928,
+            "size": 16777216
+        }
+    }
+}

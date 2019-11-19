@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov  1 14:21:21 2019
+# Process ID: 17373
+# Current directory: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware
+# Command line: wbtcv -mode batch -source /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/webtalk.log
+# Journal file: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/webtalk.jou
+#-----------------------------------------------------------
+source /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.hw/webtalk/labtool_webtalk.tcl -notrace

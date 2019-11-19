@@ -1,0 +1,443 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Nov  1 13:56:10 2019
+# Process ID: 13605
+# Current directory: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware
+# Command line: vivado top.xpr
+# Log file: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/vivado.log
+# Journal file: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/vivado.jou
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at '/home/slarson/.Xilinx/Vivado/2019.1/XilinxTclStore'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+start_gui
+open_project top.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 6524.797 ; gain = 148.266 ; free physical = 4481 ; free virtual = 12268
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:06:40
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A5A7A3
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210276A5A7A3.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276A5A7A3
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A5A7A3B
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 7611.422 ; gain = 0.000 ; free physical = 3550 ; free virtual = 11341
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_runs synth_1 -jobs 4
+[Fri Nov  1 14:01:30 2019] Launched synth_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Nov  1 14:02:29 2019] Launched synth_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Netlist 29-17] Analyzing 596 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xdc:321]
+INFO: [Timing 38-2] Deriving generated clocks [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xdc:321]
+get_clocks: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 8575.691 ; gain = 575.023 ; free physical = 2770 ; free virtual = 10502
+Finished Parsing XDC File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8575.691 ; gain = 0.000 ; free physical = 2783 ; free virtual = 10514
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 103 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+  OBUFDS => OBUFDS: 4 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFTDS, OBUFTDS): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 79 instances
+
+open_run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 8647.660 ; gain = 1024.020 ; free physical = 2686 ; free virtual = 10419
+write_edif /home/slarson/nvv.edf
+close_project
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Fri Nov  1 14:21:23 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov  1 14:21:23 2019...
+close_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 8715.469 ; gain = 0.000 ; free physical = 2514 ; free virtual = 10336
+create_project top /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top -part xc7a200tsbg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+set_property design_mode GateLvl [current_fileset]
+INFO: [Vivado 12-3498] Setting project source management mode (property SOURCE_MGMT_MODE) to "None".
+add_files -norecurse /home/slarson/nvv_nmr.edf
+import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+import_files -fileset constrs_1 -force -norecurse /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xdc
+set_property top_file /home/slarson/nvv_nmr.edf [current_fileset]
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov  1 14:21:36 2019] Launched impl_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.runs/impl_1/runme.log
+set_property is_enabled false [get_files  /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf]
+export_ip_user_files -of_objects  [get_files /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf] -no_script -reset -force -quiet
+remove_files  /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf
+file delete -force /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf
+import_files -norecurse /home/slarson/nvv_nmr.edf
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Fri Nov  1 14:31:17 2019] Launched impl_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf] -no_script -reset -force -quiet
+remove_files  /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf
+file delete -force /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf
+import_files -norecurse /home/slarson/nvv_nmr.edf
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov  1 14:44:43 2019] Launched impl_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.runs/impl_1/runme.log
+link_design -name netlist_1
+Command: link_design -name netlist_1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc7a200tsbg484-1
+Parsing EDIF File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf]
+Finished Parsing EDIF File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf]
+INFO: [Netlist 29-17] Analyzing 1590 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' defined in file 'nvv_nmr.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with JEdifNMR v0.6.5-2-gbd3d4f8
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc]
+WARNING: [Vivado 12-507] No nets matched 'eth_rx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:313]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_nets eth_rx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:313]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'eth_tx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:315]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_nets eth_tx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:315]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'pix_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:317]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_nets pix_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:317]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'pix5x_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:319]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_nets pix5x_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:319]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'sys_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:321]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:321]
+INFO: [Timing 38-2] Deriving generated clocks [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:321]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets sys_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:321]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:321]
+WARNING: [Vivado 12-507] No nets matched 'eth_rx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:321]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets eth_rx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:321]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:321]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets sys_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:321]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets eth_rx_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:321]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:321]
+WARNING: [Vivado 12-507] No nets matched 'sys_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:323]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets sys_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:323]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:323]
+WARNING: [Vivado 12-507] No nets matched 'eth_tx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:323]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets eth_tx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:323]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:323]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets sys_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:323]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets eth_tx_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:323]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:323]
+WARNING: [Vivado 12-507] No nets matched 'sys_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:325]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets sys_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:325]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:325]
+WARNING: [Vivado 12-507] No nets matched 'pix_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:325]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets pix_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:325]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:325]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets sys_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:325]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets pix_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:325]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:325]
+WARNING: [Vivado 12-507] No nets matched 'sys_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:327]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets sys_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:327]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:327]
+WARNING: [Vivado 12-507] No nets matched 'pix5x_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:327]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets pix5x_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:327]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:327]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets sys_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:327]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets pix5x_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:327]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:327]
+WARNING: [Vivado 12-507] No nets matched 'eth_rx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:329]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets eth_rx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:329]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:329]
+WARNING: [Vivado 12-507] No nets matched 'eth_tx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:329]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets eth_tx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:329]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:329]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets eth_rx_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:329]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets eth_tx_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:329]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:329]
+WARNING: [Vivado 12-507] No nets matched 'pix_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:331]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets pix_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:331]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:331]
+WARNING: [Vivado 12-507] No nets matched 'pix5x_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:331]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets pix5x_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:331]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:331]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets pix_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:331]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets pix5x_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:331]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc:331]
+Finished Parsing XDC File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/constrs_1/imports/gateware/top.xdc]
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 16 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 8758.254 ; gain = 0.000 ; free physical = 3623 ; free virtual = 10069
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 261 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+  OBUFDS => OBUFDS: 4 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFTDS, OBUFTDS): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 237 instances
+
+20 Infos, 29 Warnings, 22 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 8768.262 ; gain = 52.793 ; free physical = 3983 ; free virtual = 10429
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+report_drc -name drc_1 -ruledecks {default}
+Command: report_drc -name drc_1 -ruledecks default
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 8870.746 ; gain = 44.457 ; free physical = 3956 ; free virtual = 10402
+open_project /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 4
+[Fri Nov  1 14:55:47 2019] Launched impl_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.runs/impl_1/runme.log
+current_project top
+close_design
+export_ip_user_files -of_objects  [get_files /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf] -no_script -reset -force -quiet
+remove_files  /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf
+file delete -force /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf
+import_files -norecurse /home/slarson/nvv_nmr.edf
+current_project top(2)
+current_project top
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Fri Nov  1 15:01:06 2019] Launched impl_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.runs/impl_1/runme.log
+current_project top(2)
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Nov  1 15:13:04 2019] Launched synth_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbg484-1
+INFO: [Netlist 29-17] Analyzing 596 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xdc:321]
+INFO: [Timing 38-2] Deriving generated clocks [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xdc:321]
+Finished Parsing XDC File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video/gateware/top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8877.441 ; gain = 0.000 ; free physical = 4252 ; free virtual = 10157
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 103 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+  OBUFDS => OBUFDS: 4 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFTDS, OBUFTDS): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 79 instances
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 8933.469 ; gain = 62.723 ; free physical = 4247 ; free virtual = 10152
+current_project top
+export_ip_user_files -of_objects  [get_files /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf] -no_script -reset -force -quiet
+remove_files  /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf
+file delete -force /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf
+import_files -norecurse /home/slarson/nvv_nmr.edf
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Fri Nov  1 15:27:39 2019] Launched impl_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf] -no_script -reset -force -quiet
+remove_files  /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf
+file delete -force /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.srcs/sources_1/imports/slarson/nvv_nmr.edf
+import_files -norecurse /home/slarson/nvv_nmr.edf
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Fri Nov  1 15:53:09 2019] Launched impl_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov  1 16:06:25 2019] Launched impl_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:06:40
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A5A7A3
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210276A5A7A3.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+refresh_hw_target {localhost:3121/xilinx_tcf/Digilent/210276A5A7A3}
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276A5A7A3
+ERROR: [Labtools 27-101] Refresh failed because target is not opened
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A5A7A3B
+set_property PROGRAM.FILE {/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.runs/impl_1/nvv_nmr.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/top/top.runs/impl_1/nvv_nmr.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8933.469 ; gain = 0.000 ; free physical = 4461 ; free virtual = 10062
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+save_project_as bufg_v2 /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2 -force
+close_hw
+export_ip_user_files -of_objects  [get_files /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/sources_1/imports/slarson/nvv_nmr.edf] -no_script -reset -force -quiet
+remove_files  /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/sources_1/imports/slarson/nvv_nmr.edf
+file delete -force /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/sources_1/imports/slarson/nvv_nmr.edf
+import_files -norecurse /home/slarson/nvv_bufg_v2_nmr.edf
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov  1 16:10:52 2019] Launched impl_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/runme.log
+set_property top nvv_bufg_v2_nmr [current_fileset]
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Fri Nov  1 16:11:36 2019] Launched impl_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov  1 17:40:55 2019] Launched impl_1...
+Run output will be captured here: /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:06:40
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A5A7A3
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210276A5A7A3.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276A5A7A3B
+set_property PROGRAM.FILE {/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/nvv_bufg_v2_nmr.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/nvv_bufg_v2_nmr.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8933.469 ; gain = 0.000 ; free physical = 4193 ; free virtual = 9689
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_project top(2)
+close_project
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/nvv_bufg_v2_nmr.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8933.469 ; gain = 0.000 ; free physical = 3519 ; free virtual = 9763
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  4 13:56:58 2019...

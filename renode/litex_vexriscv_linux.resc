@@ -1,0 +1,25 @@
+using sysbus
+
+mach create
+machine LoadPlatformDescription @platforms/cpus/litex_vexriscv_linux.repl
+
+showAnalyzer uart
+
+macro reset
+"""
+    ### Linux kernel
+    sysbus LoadBinary @/home/slarson/vexriscv/renode/buildroot/output/images/Image 0xc0000000
+
+    ### rootfs
+    sysbus LoadBinary @/home/slarson/vexriscv/renode/buildroot/output/images/rootfs.cpio 0xc0800000
+
+    ### dts
+    sysbus LoadFdt @/home/slarson/vexriscv/renode/image/rv32.dtb 0xc1000000
+
+    ### VexRiscv BIOS aka emulator
+    sysbus LoadBinary @/home/slarson/vexriscv/renode/image/emulator.bin 0x20000000
+
+    cpu PC 0x20000000
+"""
+
+runMacro $reset

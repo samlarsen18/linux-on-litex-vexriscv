@@ -1,0 +1,907 @@
+
+*** Running vivado
+    with args -log nvv_bufg_v2_nmr.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source nvv_bufg_v2_nmr.tcl -notrace
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at '/home/slarson/.Xilinx/Vivado/2019.1/XilinxTclStore'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source nvv_bufg_v2_nmr.tcl -notrace
+Command: link_design -edif_top_file /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/sources_1/imports/slarson/nvv_bufg_v2_nmr.edf -part xc7a200tsbg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+Parsing EDIF File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/sources_1/imports/slarson/nvv_bufg_v2_nmr.edf]
+Finished Parsing EDIF File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/sources_1/imports/slarson/nvv_bufg_v2_nmr.edf]
+INFO: [Netlist 29-17] Analyzing 1638 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' defined in file 'nvv_bufg_v2_nmr.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with JEdifNMR v0.6.5-2-gbd3d4f8
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc]
+WARNING: [Vivado 12-507] No nets matched 'eth_rx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:313]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_nets eth_rx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:313]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'eth_tx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:315]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_nets eth_tx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:315]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'pix_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:317]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_nets pix_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:317]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'pix5x_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:319]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_nets pix5x_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:319]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'sys_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:321]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:321]
+INFO: [Timing 38-2] Deriving generated clocks [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:321]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets sys_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:321]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:321]
+get_clocks: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2493.066 ; gain = 606.023 ; free physical = 3288 ; free virtual = 8936
+WARNING: [Vivado 12-507] No nets matched 'eth_rx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:321]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets eth_rx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:321]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:321]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets sys_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:321]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets eth_rx_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:321]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:321]
+WARNING: [Vivado 12-507] No nets matched 'sys_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:323]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets sys_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:323]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:323]
+WARNING: [Vivado 12-507] No nets matched 'eth_tx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:323]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets eth_tx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:323]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:323]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets sys_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:323]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets eth_tx_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:323]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:323]
+WARNING: [Vivado 12-507] No nets matched 'sys_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:325]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets sys_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:325]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:325]
+WARNING: [Vivado 12-507] No nets matched 'pix_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:325]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets pix_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:325]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:325]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets sys_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:325]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets pix_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:325]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:325]
+WARNING: [Vivado 12-507] No nets matched 'sys_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:327]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets sys_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:327]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:327]
+WARNING: [Vivado 12-507] No nets matched 'pix5x_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:327]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets pix5x_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:327]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:327]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets sys_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:327]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets pix5x_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:327]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:327]
+WARNING: [Vivado 12-507] No nets matched 'eth_rx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:329]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets eth_rx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:329]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:329]
+WARNING: [Vivado 12-507] No nets matched 'eth_tx_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:329]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets eth_tx_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:329]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:329]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets eth_rx_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:329]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets eth_tx_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:329]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:329]
+WARNING: [Vivado 12-507] No nets matched 'pix_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:331]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets pix_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:331]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:331]
+WARNING: [Vivado 12-507] No nets matched 'pix5x_clk'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:331]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -include_generated_clocks -of [get_nets pix5x_clk]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:331]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:331]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets pix_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:331]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks -of [get_nets pix5x_clk]]'. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:331]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc:331]
+Finished Parsing XDC File [/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.srcs/constrs_1/imports/gateware/top.xdc]
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 16 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2500.004 ; gain = 0.000 ; free physical = 3333 ; free virtual = 8981
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 261 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+  OBUFDS => OBUFDS: 4 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFTDS, OBUFTDS): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 237 instances
+
+21 Infos, 29 Warnings, 22 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:34 . Memory (MB): peak = 2500.004 ; gain = 1055.684 ; free physical = 3333 ; free virtual = 8981
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2564.035 ; gain = 64.031 ; free physical = 3327 ; free virtual = 8975
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 6e02824d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 2564.035 ; gain = 0.000 ; free physical = 3277 ; free virtual = 8925
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 7 inverter(s) to 14 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 136ed71e2
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 2651.832 ; gain = 0.000 ; free physical = 3209 ; free virtual = 8857
+INFO: [Opt 31-389] Phase Retarget created 9 cells and removed 393 cells
+INFO: [Opt 31-1021] In phase Retarget, 36 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 7391ffef
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2651.832 ; gain = 0.000 ; free physical = 3209 ; free virtual = 8857
+INFO: [Opt 31-389] Phase Constant propagation created 1 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 33 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: b6f1f833
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2651.832 ; gain = 0.000 ; free physical = 3204 ; free virtual = 8852
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 10 cells
+INFO: [Opt 31-1021] In phase Sweep, 548 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: b6f1f833
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2651.832 ; gain = 0.000 ; free physical = 3206 ; free virtual = 8854
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: b6f1f833
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2651.832 ; gain = 0.000 ; free physical = 3206 ; free virtual = 8854
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: b6f1f833
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 2651.832 ; gain = 0.000 ; free physical = 3207 ; free virtual = 8855
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 33 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               9  |             393  |                                             36  |
+|  Constant propagation         |               1  |               1  |                                             33  |
+|  Sweep                        |               0  |              10  |                                            548  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             33  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2651.832 ; gain = 0.000 ; free physical = 3207 ; free virtual = 8855
+Ending Logic Optimization Task | Checksum: 1e583e8b2
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 2651.832 ; gain = 0.000 ; free physical = 3206 ; free virtual = 8854
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.566 | TNS=-6579.529 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 183 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 366
+Ending PowerOpt Patch Enables Task | Checksum: 1e583e8b2
+
+Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:00.78 . Memory (MB): peak = 3289.641 ; gain = 0.000 ; free physical = 3119 ; free virtual = 8732
+Ending Power Optimization Task | Checksum: 1e583e8b2
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:39 . Memory (MB): peak = 3289.641 ; gain = 637.809 ; free physical = 3169 ; free virtual = 8783
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1e583e8b2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3289.641 ; gain = 0.000 ; free physical = 3169 ; free virtual = 8783
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3289.641 ; gain = 0.000 ; free physical = 3169 ; free virtual = 8783
+Ending Netlist Obfuscation Task | Checksum: 1e583e8b2
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3289.641 ; gain = 0.000 ; free physical = 3169 ; free virtual = 8783
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 29 Warnings, 22 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:56 ; elapsed = 00:00:54 . Memory (MB): peak = 3289.641 ; gain = 789.637 ; free physical = 3170 ; free virtual = 8783
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3289.641 ; gain = 0.000 ; free physical = 3170 ; free virtual = 8783
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3289.641 ; gain = 0.000 ; free physical = 3166 ; free virtual = 8781
+INFO: [Common 17-1381] The checkpoint '/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/nvv_bufg_v2_nmr_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 3289.641 ; gain = 0.000 ; free physical = 3159 ; free virtual = 8778
+INFO: [runtcl-4] Executing : report_drc -file nvv_bufg_v2_nmr_drc_opted.rpt -pb nvv_bufg_v2_nmr_drc_opted.pb -rpx nvv_bufg_v2_nmr_drc_opted.rpx
+Command: report_drc -file nvv_bufg_v2_nmr_drc_opted.rpt -pb nvv_bufg_v2_nmr_drc_opted.pb -rpx nvv_bufg_v2_nmr_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/nvv_bufg_v2_nmr_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 3337.664 ; gain = 48.023 ; free physical = 3153 ; free virtual = 8772
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+CRITICAL WARNING: [DRC AVAL-46] v7v8_mmcm_fvco_rule1: The current computed target frequency, FVCO, is out of range for cell MMCME2_ADV. The computed FVCO is 1500.000 MHz. The valid FVCO range for speed grade -1 is 600MHz to 1200MHz. The cell attribute values used to compute FVCO are CLKFBOUT_MULT_F = 30.000, CLKIN1_PERIOD = 10.00000, and DIVCLK_DIVIDE = 2 (FVCO = 1000 * CLKFBOUT_MULT_F/(CLKIN1_PERIOD * DIVCLK_DIVIDE)).
+This violation may be corrected by:
+  1. The timer uses timing constraints for clock period or clock frequency that affect CLKIN1 to set cell attribute CLKIN1_PERIOD, over-riding any previous value. This may already be in place and, if so this violation will be resolved once Timing is run.  Otherwise, consider modifying timing constraints to adjust the CLKIN1_PERIOD and bring FVCO into the allowed range.
+  2. In the absence of timing constraints that affect CLKIN1, consider modifying the cell CLKIN1_PERIOD to bring FVCO into the allowed range.
+  3. If CLKIN1_PERIOD is satisfactory, modify the CLKFBOUT_MULT_F or DIVCLK_DIVIDE cell attributes to bring FVCO into the allowed range.
+  4. The MMCM configuration may be dynamically modified by use of DRP which is recognized by an ACTIVE signal on DCLK pin.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Critical Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 3153 ; free virtual = 8772
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: e858517d
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 3153 ; free virtual = 8772
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 3153 ; free virtual = 8772
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 13fa49e63
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 3103 ; free virtual = 8723
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 23d4b1577
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:27 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2994 ; free virtual = 8613
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 23d4b1577
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:28 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2994 ; free virtual = 8613
+Phase 1 Placer Initialization | Checksum: 23d4b1577
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:28 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2995 ; free virtual = 8614
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1532a3595
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:31 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2955 ; free virtual = 8574
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net main_soclinux_tag_port_dat_w[1]_TMR_0 could not be optimized because driver VexRiscv/IBusCachedPlugin_cache/tag_mem_reg_i_21_TMR_0 could not be replicated
+INFO: [Physopt 32-117] Net main_soclinux_tag_port_dat_w[1]_TMR_1 could not be optimized because driver VexRiscv/IBusCachedPlugin_cache/tag_mem_reg_i_21_TMR_1 could not be replicated
+INFO: [Physopt 32-117] Net main_soclinux_tag_port_dat_w[1]_TMR_2 could not be optimized because driver VexRiscv/IBusCachedPlugin_cache/tag_mem_reg_i_21_TMR_2 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_7__0_n_0_TMR_1 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_7__0_TMR_1 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_4__0_n_0_TMR_0 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_4__0_TMR_0 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_7__0_n_0_TMR_0 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_7__0_TMR_0 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_4__0_n_0_TMR_1 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_4__0_TMR_1 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_8_n_0_TMR_1 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_8_TMR_1 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_5__0_n_0_TMR_0 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_5__0_TMR_0 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_6__0_n_0_TMR_1 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_6__0_TMR_1 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_5__0_n_0_TMR_1 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_5__0_TMR_1 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_data_symbol0_reg_i_6_n_0_TMR_1 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_data_symbol0_reg_i_6_TMR_1 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_8_n_0_TMR_0 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_8_TMR_0 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_7__0_n_0_TMR_2 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_7__0_TMR_2 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_3__0_n_0_TMR_0 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_3__0_TMR_0 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_6__0_n_0_TMR_0 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_6__0_TMR_0 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_9_n_0_TMR_1 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_9_TMR_1 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_data_symbol0_reg_i_8_n_0_TMR_1 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_data_symbol0_reg_i_8_TMR_1 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_4__0_n_0_TMR_2 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_4__0_TMR_2 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_9_n_0_TMR_0 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_9_TMR_0 could not be replicated
+INFO: [Physopt 32-117] Net main_soclinux_sram_we_reg[0]_TMR_2 could not be optimized because driver VexRiscv/IBusCachedPlugin_cache/mem_1_reg_0_0_i_7_TMR_2 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_3__0_n_0_TMR_1 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_3__0_TMR_1 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_9_n_0_TMR_2 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_9_TMR_2 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_data_symbol0_reg_i_7_n_0_TMR_0 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_data_symbol0_reg_i_7_TMR_0 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_data_symbol0_reg_i_6_n_0_TMR_0 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_data_symbol0_reg_i_6_TMR_0 could not be replicated
+INFO: [Physopt 32-117] Net main_soclinux_sram_we_reg[0]_TMR_1 could not be optimized because driver VexRiscv/IBusCachedPlugin_cache/mem_1_reg_0_0_i_7_TMR_1 could not be replicated
+INFO: [Physopt 32-117] Net ways_0_tags_reg_i_6__0_n_0_TMR_2 could not be optimized because driver VexRiscv/dataCache_1_/ways_0_tags_reg_i_6__0_TMR_2 could not be replicated
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2921 ; free virtual = 8540
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Fanout                        |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           7  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 13544a637
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:01:26 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2922 ; free virtual = 8541
+Phase 2.2 Global Placement Core | Checksum: 19d81af89
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:01:34 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2912 ; free virtual = 8531
+Phase 2 Global Placement | Checksum: 19d81af89
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:01:34 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2936 ; free virtual = 8555
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 13feaed6a
+
+Time (s): cpu = 00:04:09 ; elapsed = 00:01:38 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2931 ; free virtual = 8550
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2573c7490
+
+Time (s): cpu = 00:04:35 ; elapsed = 00:01:47 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2923 ; free virtual = 8543
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 21448284f
+
+Time (s): cpu = 00:04:37 ; elapsed = 00:01:48 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2924 ; free virtual = 8543
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 25199516a
+
+Time (s): cpu = 00:04:37 ; elapsed = 00:01:48 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2925 ; free virtual = 8545
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 217ad60da
+
+Time (s): cpu = 00:05:10 ; elapsed = 00:02:02 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2924 ; free virtual = 8543
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: eea03c57
+
+Time (s): cpu = 00:05:35 ; elapsed = 00:02:25 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2885 ; free virtual = 8505
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 186d302a4
+
+Time (s): cpu = 00:05:40 ; elapsed = 00:02:30 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2888 ; free virtual = 8507
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 14ba07327
+
+Time (s): cpu = 00:05:41 ; elapsed = 00:02:31 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2887 ; free virtual = 8507
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 18fb71976
+
+Time (s): cpu = 00:06:24 ; elapsed = 00:02:49 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2883 ; free virtual = 8502
+Phase 3 Detail Placement | Checksum: 18fb71976
+
+Time (s): cpu = 00:06:25 ; elapsed = 00:02:49 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2883 ; free virtual = 8503
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 19fbf904f
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net sys_rst_TMR_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net sys_rst_TMR_1, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net sys_rst_TMR_2, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 3 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 3, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19fbf904f
+
+Time (s): cpu = 00:07:02 ; elapsed = 00:02:58 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2930 ; free virtual = 8550
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-7.203. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 226a5854f
+
+Time (s): cpu = 00:08:20 ; elapsed = 00:04:13 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2927 ; free virtual = 8546
+Phase 4.1 Post Commit Optimization | Checksum: 226a5854f
+
+Time (s): cpu = 00:08:21 ; elapsed = 00:04:13 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2927 ; free virtual = 8546
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 226a5854f
+
+Time (s): cpu = 00:08:21 ; elapsed = 00:04:14 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2931 ; free virtual = 8550
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 226a5854f
+
+Time (s): cpu = 00:08:22 ; elapsed = 00:04:14 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2931 ; free virtual = 8551
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2931 ; free virtual = 8551
+Phase 4.4 Final Placement Cleanup | Checksum: 1c3a1a637
+
+Time (s): cpu = 00:08:22 ; elapsed = 00:04:15 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2931 ; free virtual = 8551
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c3a1a637
+
+Time (s): cpu = 00:08:23 ; elapsed = 00:04:15 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2931 ; free virtual = 8551
+Ending Placer Task | Checksum: d1f98c7d
+
+Time (s): cpu = 00:08:23 ; elapsed = 00:04:15 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2931 ; free virtual = 8551
+INFO: [Common 17-83] Releasing license: Implementation
+116 Infos, 29 Warnings, 23 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:08:30 ; elapsed = 00:04:19 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 3003 ; free virtual = 8622
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 3003 ; free virtual = 8622
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2936 ; free virtual = 8609
+INFO: [Common 17-1381] The checkpoint '/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/nvv_bufg_v2_nmr_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2985 ; free virtual = 8617
+INFO: [runtcl-4] Executing : report_io -file nvv_bufg_v2_nmr_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.37 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2978 ; free virtual = 8609
+INFO: [runtcl-4] Executing : report_utilization -file nvv_bufg_v2_nmr_utilization_placed.rpt -pb nvv_bufg_v2_nmr_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file nvv_bufg_v2_nmr_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.84 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2987 ; free virtual = 8618
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC PDRC-33] MMCM_adv_ClkFrequency_div_dclk: The computed value 1500.000 MHz (CLKIN1_PERIOD, net clk100_clk) for the VCO operating frequency of the MMCME2_ADV site MMCME2_ADV_X0Y2 (cell MMCME2_ADV) falls outside the operating range of the MMCM VCO frequency for this device (600.000 - 1200.000 MHz). The computed value is (CLKFBOUT_MULT_F * 1000 / (CLKINx_PERIOD * DIVCLK_DIVIDE)). Please adjust either the input period CLKINx_PERIOD (10.000000), multiplication factor CLKFBOUT_MULT_F (30.000000) or the division factor DIVCLK_DIVIDE (2), in order to achieve a VCO frequency within the rated operating range for this device.
+Please note that this check is a Warning because the DCLK pin has an ACTIVE signal and it is assumed that dynamic control (DRP) will be exercised to put the VCO frequency into valid operating range.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 933366e1 ConstDB: 0 ShapeSum: 3ec6259c RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1e474740
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:06 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2770 ; free virtual = 8402
+Post Restoration Checksum: NetGraph: 2401d6a NumContArr: 1c0729d6 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1e474740
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:01:07 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2740 ; free virtual = 8372
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1e474740
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:08 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2694 ; free virtual = 8326
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1e474740
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:08 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2694 ; free virtual = 8326
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1fa11017b
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:01:27 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2659 ; free virtual = 8291
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.014 | TNS=-12259.626| WHS=-2.545 | THS=-667.984|
+
+Phase 2 Router Initialization | Checksum: 21ccb5537
+
+Time (s): cpu = 00:02:48 ; elapsed = 00:01:32 . Memory (MB): peak = 3337.664 ; gain = 0.000 ; free physical = 2646 ; free virtual = 8278
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 44563
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 44563
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1875cbd2f
+
+Time (s): cpu = 00:15:44 ; elapsed = 00:03:22 . Memory (MB): peak = 3403.645 ; gain = 65.980 ; free physical = 2801 ; free virtual = 8240
+INFO: [Route 35-580] Design has 423 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|    main_soclinux_clkout0 |   main_ethphy_pll_clk_tx |                                                          builder_xilinxmultiregimpl4_regs0_reg[4]_TMR_0/D|
+| s7hdmioutclocking_mmcm_clk0 |s7hdmioutclocking_mmcm_clk0 |                                                                        builder_videoout_state_reg_TMR_1/D|
+|    main_soclinux_clkout0 |   main_ethphy_pll_clk_tx |                                                          builder_xilinxmultiregimpl4_regs0_reg[3]_TMR_2/D|
+| s7hdmioutclocking_mmcm_clk0 |s7hdmioutclocking_mmcm_clk0 |                                                                        builder_videoout_state_reg_TMR_2/D|
+|    main_soclinux_clkout0 |   main_ethphy_pll_clk_tx |                                                          builder_xilinxmultiregimpl4_regs0_reg[3]_TMR_0/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 5540
+ Number of Nodes with overlaps = 547
+ Number of Nodes with overlaps = 124
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.257 | TNS=-23036.924| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1ad3020a2
+
+Time (s): cpu = 00:26:25 ; elapsed = 00:05:55 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2856 ; free virtual = 8255
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 170
+ Number of Nodes with overlaps = 93
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.553 | TNS=-22969.078| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 237256c08
+
+Time (s): cpu = 00:26:57 ; elapsed = 00:06:18 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2852 ; free virtual = 8250
+Phase 4 Rip-up And Reroute | Checksum: 237256c08
+
+Time (s): cpu = 00:26:57 ; elapsed = 00:06:18 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2852 ; free virtual = 8250
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 175107581
+
+Time (s): cpu = 00:27:07 ; elapsed = 00:06:20 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2853 ; free virtual = 8252
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.257 | TNS=-22965.852| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 154c24e94
+
+Time (s): cpu = 00:27:10 ; elapsed = 00:06:21 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2849 ; free virtual = 8247
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 154c24e94
+
+Time (s): cpu = 00:27:10 ; elapsed = 00:06:22 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2849 ; free virtual = 8247
+Phase 5 Delay and Skew Optimization | Checksum: 154c24e94
+
+Time (s): cpu = 00:27:10 ; elapsed = 00:06:22 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2849 ; free virtual = 8247
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1823e802a
+
+Time (s): cpu = 00:27:26 ; elapsed = 00:06:26 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2845 ; free virtual = 8243
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.257 | TNS=-22929.090| WHS=-0.191 | THS=-0.544 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 22a0a01be
+
+Time (s): cpu = 00:27:28 ; elapsed = 00:06:27 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2835 ; free virtual = 8233
+WARNING: [Route 35-468] The router encountered 973 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	OSERDESE2_45/OCE
+	OSERDESE2_46/OCE
+	OSERDESE2_47/OCE
+	OSERDESE2_48/OCE
+	OSERDESE2_49/OCE
+	OSERDESE2_50/OCE
+	OSERDESE2_51/OCE
+	OSERDESE2_52/OCE
+	timinggenerator_vactive_i_8_TMR_0/I1
+	timinggenerator_vactive_i_8_TMR_0/I2
+	.. and 963 more pins.
+
+Phase 6 Post Hold Fix | Checksum: 1cd6b13b9
+
+Time (s): cpu = 00:27:28 ; elapsed = 00:06:27 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2835 ; free virtual = 8233
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 6.71169 %
+  Global Horizontal Routing Utilization  = 9.02069 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 77.4775%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 83.7838%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 94.1176%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X68Y134 -> INT_L_X68Y134
+   INT_R_X69Y107 -> INT_R_X69Y107
+   INT_L_X68Y104 -> INT_L_X68Y104
+   INT_L_X88Y104 -> INT_L_X88Y104
+   INT_R_X69Y103 -> INT_R_X69Y103
+West Dir 1x1 Area, Max Cong = 94.1176%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X74Y106 -> INT_L_X74Y106
+   INT_R_X63Y104 -> INT_R_X63Y104
+   INT_R_X57Y78 -> INT_R_X57Y78
+   INT_L_X56Y76 -> INT_L_X56Y76
+   INT_R_X57Y72 -> INT_R_X57Y72
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.25 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 2 Aspect Ratio: 1 Sparse Ratio: 0.5
+
+Phase 7 Route finalize | Checksum: 284b896ff
+
+Time (s): cpu = 00:27:28 ; elapsed = 00:06:27 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2832 ; free virtual = 8230
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 284b896ff
+
+Time (s): cpu = 00:27:29 ; elapsed = 00:06:28 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2830 ; free virtual = 8228
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1fd3a3120
+
+Time (s): cpu = 00:27:36 ; elapsed = 00:06:35 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2832 ; free virtual = 8231
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 12fef0b53
+
+Time (s): cpu = 00:27:51 ; elapsed = 00:06:39 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2837 ; free virtual = 8235
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-7.257 | TNS=-22931.592| WHS=0.050  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 12fef0b53
+
+Time (s): cpu = 00:27:51 ; elapsed = 00:06:39 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2837 ; free virtual = 8235
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:27:52 ; elapsed = 00:06:39 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2948 ; free virtual = 8346
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+135 Infos, 32 Warnings, 23 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:28:01 ; elapsed = 00:06:43 . Memory (MB): peak = 3452.645 ; gain = 114.980 ; free physical = 2948 ; free virtual = 8346
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3452.645 ; gain = 0.000 ; free physical = 2948 ; free virtual = 8346
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 3452.645 ; gain = 0.000 ; free physical = 2862 ; free virtual = 8329
+INFO: [Common 17-1381] The checkpoint '/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/nvv_bufg_v2_nmr_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 3452.645 ; gain = 0.000 ; free physical = 2927 ; free virtual = 8342
+INFO: [runtcl-4] Executing : report_drc -file nvv_bufg_v2_nmr_drc_routed.rpt -pb nvv_bufg_v2_nmr_drc_routed.pb -rpx nvv_bufg_v2_nmr_drc_routed.rpx
+Command: report_drc -file nvv_bufg_v2_nmr_drc_routed.rpt -pb nvv_bufg_v2_nmr_drc_routed.pb -rpx nvv_bufg_v2_nmr_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/nvv_bufg_v2_nmr_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:29 ; elapsed = 00:00:09 . Memory (MB): peak = 3524.680 ; gain = 72.035 ; free physical = 2909 ; free virtual = 8324
+INFO: [runtcl-4] Executing : report_methodology -file nvv_bufg_v2_nmr_methodology_drc_routed.rpt -pb nvv_bufg_v2_nmr_methodology_drc_routed.pb -rpx nvv_bufg_v2_nmr_methodology_drc_routed.rpx
+Command: report_methodology -file nvv_bufg_v2_nmr_methodology_drc_routed.rpt -pb nvv_bufg_v2_nmr_methodology_drc_routed.pb -rpx nvv_bufg_v2_nmr_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/nvv_bufg_v2_nmr_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:02:01 ; elapsed = 00:00:26 . Memory (MB): peak = 3524.680 ; gain = 0.000 ; free physical = 2934 ; free virtual = 8305
+INFO: [runtcl-4] Executing : report_power -file nvv_bufg_v2_nmr_power_routed.rpt -pb nvv_bufg_v2_nmr_power_summary_routed.pb -rpx nvv_bufg_v2_nmr_power_routed.rpx
+Command: report_power -file nvv_bufg_v2_nmr_power_routed.rpt -pb nvv_bufg_v2_nmr_power_summary_routed.pb -rpx nvv_bufg_v2_nmr_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+147 Infos, 33 Warnings, 23 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:40 ; elapsed = 00:00:23 . Memory (MB): peak = 3524.680 ; gain = 0.000 ; free physical = 2881 ; free virtual = 8260
+INFO: [runtcl-4] Executing : report_route_status -file nvv_bufg_v2_nmr_route_status.rpt -pb nvv_bufg_v2_nmr_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file nvv_bufg_v2_nmr_timing_summary_routed.rpt -pb nvv_bufg_v2_nmr_timing_summary_routed.pb -rpx nvv_bufg_v2_nmr_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file nvv_bufg_v2_nmr_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file nvv_bufg_v2_nmr_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file nvv_bufg_v2_nmr_bus_skew_routed.rpt -pb nvv_bufg_v2_nmr_bus_skew_routed.pb -rpx nvv_bufg_v2_nmr_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  1 16:26:00 2019...
+
+*** Running vivado
+    with args -log nvv_bufg_v2_nmr.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source nvv_bufg_v2_nmr.tcl -notrace
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at '/home/slarson/.Xilinx/Vivado/2019.1/XilinxTclStore'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source nvv_bufg_v2_nmr.tcl -notrace
+Command: open_checkpoint nvv_bufg_v2_nmr_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1443.312 ; gain = 0.000 ; free physical = 4439 ; free virtual = 9814
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Netlist 29-17] Analyzing 1638 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' defined in file 'nvv_bufg_v2_nmr.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2474.488 ; gain = 38.875 ; free physical = 3382 ; free virtual = 8741
+Restored from archive | CPU: 5.360000 secs | Memory: 51.956909 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2474.488 ; gain = 38.875 ; free physical = 3382 ; free virtual = 8741
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2474.488 ; gain = 0.000 ; free physical = 3388 ; free virtual = 8748
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 257 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFTDS, OBUFTDS): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 237 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2019.1 (64-bit) build 2552052
+open_checkpoint: Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 2474.488 ; gain = 1031.176 ; free physical = 3388 ; free virtual = 8748
+Command: write_bitstream -force nvv_bufg_v2_nmr.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for OSERDESE2_45 with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for OSERDESE2_46 with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for OSERDESE2_47 with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for OSERDESE2_48 with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for OSERDESE2_49 with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for OSERDESE2_50 with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for OSERDESE2_51 with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC AVAL-70] OSERDES_DataRateTqTriWidth: Unexpected programming for OSERDESE2_52 with TRISTATE_WIDTH. DATA_RATE_TQ set DDR expects TRISTATE_WIDTH to be set 4
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC PDRC-33] MMCM_adv_ClkFrequency_div_dclk: The computed value 1500.000 MHz (CLKIN1_PERIOD, net clk100_clk) for the VCO operating frequency of the MMCME2_ADV site MMCME2_ADV_X0Y2 (cell MMCME2_ADV) falls outside the operating range of the MMCM VCO frequency for this device (600.000 - 1200.000 MHz). The computed value is (CLKFBOUT_MULT_F * 1000 / (CLKINx_PERIOD * DIVCLK_DIVIDE)). Please adjust either the input period CLKINx_PERIOD (10.000000), multiplication factor CLKFBOUT_MULT_F (30.000000) or the division factor DIVCLK_DIVIDE (2), in order to achieve a VCO frequency within the rated operating range for this device.
+Please note that this check is a Warning because the DCLK pin has an ACTIVE signal and it is assumed that dynamic control (DRP) will be exercised to put the VCO frequency into valid operating range.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 10 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./nvv_bufg_v2_nmr.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/slarson/vexriscv/linux-on-litex-vexriscv/build/nexys_video_tmr/gateware/bufg_v2/bufg_v2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Nov  1 17:42:36 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:02:03 ; elapsed = 00:00:48 . Memory (MB): peak = 3099.797 ; gain = 625.309 ; free physical = 3286 ; free virtual = 8648
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  1 17:42:36 2019...

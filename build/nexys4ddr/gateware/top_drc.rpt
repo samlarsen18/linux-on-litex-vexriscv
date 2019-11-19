@@ -1,0 +1,80 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Oct 23 12:34:42 2019
+| Host         : EE10854 running 64-bit Ubuntu 18.04.3 LTS
+| Command      : report_drc -file top_drc.rpt
+| Design       : top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: top
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 6
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| BIIVRC-1    | Warning  | Bank IO standard internal Vref conflict                     | 1          |
+| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 2          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BIIVRC-1#1 Warning
+Bank IO standard internal Vref conflict  - IOBank:34
+Conflicting INTERNAL_VREF constraint in Bank 34.  Some ports in this bank, for example, ddram_dq[0]   (SSTL18_II, Vref=0.900V) 
+ at site R7 conflict with constrained INTERNAL_VREF of 0.750V.ddram_dq[0]
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net CLKB0 is a gated clock net sourced by a combinational pin ISERDESE2_i_1/O, cell ISERDESE2_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net eth_tx_clk is a gated clock net sourced by a combinational pin eth_tx_clk_inst/O, cell eth_tx_clk_inst. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT ISERDESE2_i_1 is driving clock pin of 16 cells. This could lead to large hold time violations. Involved cells are:
+ISERDESE2, ISERDESE2_1, ISERDESE2_10, ISERDESE2_11, ISERDESE2_12, ISERDESE2_13, ISERDESE2_14, ISERDESE2_15, ISERDESE2_2, ISERDESE2_3, ISERDESE2_4, ISERDESE2_5, ISERDESE2_6, ISERDESE2_7, ISERDESE2_8 (the first 15 of 16 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT eth_tx_clk_inst is driving clock pin of 102 cells. This could lead to large hold time violations. Involved cells are:
+FDPE_10, FDPE_11, FSM_onehot_builder_liteethmaccrc32inserter_state_reg[1], FSM_onehot_builder_liteethmaccrc32inserter_state_reg[2], FSM_sequential_builder_liteethmacpreambleinserter_state_reg[0], FSM_sequential_builder_liteethmacpreambleinserter_state_reg[1], builder_liteethmacgap_state_reg, builder_liteethmacpaddinginserter_state_reg, builder_xilinxmultiregimpl6_regs0_reg[0], builder_xilinxmultiregimpl6_regs0_reg[1], builder_xilinxmultiregimpl6_regs0_reg[2], builder_xilinxmultiregimpl6_regs0_reg[3], builder_xilinxmultiregimpl6_regs0_reg[4], builder_xilinxmultiregimpl6_regs0_reg[5], builder_xilinxmultiregimpl6_regs0_reg[6] (the first 15 of 102 listed)
+Related violations: <none>
+
+
