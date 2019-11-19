@@ -1,2 +1,2 @@
-./renode/buildroot/output/
-./renode/buildroot/.git/
+./renode/buildroot/output/*
+./renode/buildroot/.git/*
